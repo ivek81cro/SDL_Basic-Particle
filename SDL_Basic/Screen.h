@@ -13,6 +13,7 @@ namespace particleNamSp {
 		SDL_Renderer *m_renderer;
 		SDL_Texture *m_texture;
 		Uint32 *m_buffer;
+		Uint32 *m_buffer2;
 	public:
 		Screen();
 		bool init();
@@ -21,6 +22,7 @@ namespace particleNamSp {
 		bool processEvents();
 		void close();	
 		void clear();
+		void boxBlure();
 	};
 }
 

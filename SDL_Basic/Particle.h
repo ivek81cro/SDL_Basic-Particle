@@ -13,7 +13,7 @@ namespace particleNamSp {
 	public:
 		Particle();
 		~Particle();
-		void update();
+		void update(int interval);
 	};
 }
 #endif // !PART_H

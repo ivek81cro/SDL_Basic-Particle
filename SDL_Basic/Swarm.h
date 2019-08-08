@@ -7,12 +7,13 @@ namespace particleNamSp {
 	{
 	private:
 		Particle *m_particles;
+		int lastTime;
 	public:
 		const static int N_PARTICLES = 10000;
 		Swarm();
 		~Swarm();
 		const Particle *const getParticles() { return m_particles; }
-		void update();
+		void update(int elapsed);
 	};
 }
 
